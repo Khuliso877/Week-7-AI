@@ -1,0 +1,100 @@
+Case 1: Biased Hiring Tool
+Scenario
+Amazon experimented with an AI recruiting model that learned from 10 years of resumes submitted to the company. Because most past hires were male, the model penalized resumes containing terms associated with women (e.g., “women’s chess club”).
+
+1. Source of Bias
+a. Training Data Bias
+Historical hiring data was male-dominated, so the model learned that male candidates were “better.”
+Proxy variables (e.g., certain schools, keywords, job titles) encoded gender indirectly.
+
+b. Label Bias
+The “successful hire” labels reflected human bias—if previous decisions were biased, the model reproduced that bias.
+
+c. Feature Selection Bias
+The model relied on textual cues from resumes that correlated strongly with gender.
+
+2. Three Fixes to Make the Tool Fairer
+Fix 1: Debias the Training Data
+Balance the dataset: equal representation of male and female candidates.
+Remove gender-correlated terms (“sports leagues,” certain clubs, pronouns).
+Use counterfactual data augmentation (replace gendered terms with neutral alternates in duplicate samples).
+
+Fix 2: Use Fairness-Constrained Algorithms
+Apply fairness constraints such as demographic parity, equalized odds, or disparate impact constraints inside the model.
+Train models with adversarial debiasing, where an auxiliary network tries to predict gender, and the main model is penalized if gender is recoverable.
+
+Fix 3: Human-in-the-Loop + Transparent Features
+Limit model outputs to ranking candidates on skills only.
+Force the model to use skill-based features (certifications, experience, competencies).
+Require human review for final decisions.
+
+3. Fairness Metrics to Evaluate Post-Correction
+Demographic Parity
+The probability of recommending a candidate should be similar across genders.
+
+Equal Opportunity
+True positive rates (qualified candidates correctly recommended) should be equal for men and women.
+
+Disparate Impact Ratio
+DI
+=
+Selection Rate for protected group
+Selection Rate for majority group
+DI=
+Selection Rate for majority group
+Selection Rate for protected group
+	​
+
+
+A DI below 0.8 signals potential discrimination (80% rule).
+
+Calibration by Group
+The score given by the model should represent the same likelihood of success for both genders.
+
+Case 2: Facial Recognition in Policing
+Scenario
+
+A police facial recognition system misidentifies people of color at significantly higher rates than white individuals.
+
+1. Ethical Risks
+a. Wrongful Arrests
+Misidentification leads to false accusations; multiple real-life cases have already occurred.
+Minorities face disproportionately high error rates (a known fairness issue in biometric systems).
+
+b. Privacy Violations
+Continuous surveillance erodes civil liberties.
+Adds risk of mass tracking without consent.
+
+c. Discrimination at Scale
+Technology amplifies existing racial profiling.
+“Automated suspicion” disproportionately affects minority groups.
+
+d. Lack of Accountability
+Police may over-rely on the system (automation bias).
+When the system fails, responsibility becomes unclear.
+
+2. Policies for Responsible Deployment
+Policy 1: Mandatory Human Review
+The system’s match cannot be used as primary evidence.
+Human analysts must verify matches and sign off with documentation.
+
+Policy 2: Performance Standards + Independent Audits
+Set minimum accuracy thresholds across demographic groups.
+Require third-party fairness audits before adoption and annually thereafter.
+Publish results for transparency.
+
+Policy 3: Limit Usage to Narrow, High-Justification Scenarios
+Only use for serious crimes.
+No live real-time mass scanning of public spaces.
+
+Policy 4: Require Consent or Judicial Oversight
+Facial search requests must be approved by a judge or oversight board.
+Logs and warrants required for each query.
+
+Policy 5: Algorithmic Improvements & Diverse Training Data
+Use better-balanced datasets representing all demographics.
+Conduct bias stress-testing across race, age, gender.
+
+Policy 6: Clear Appeals and Redress Mechanisms
+Individuals must be allowed to challenge incorrect matches.
+Police departments must notify people when facial recognition was used in their case.
