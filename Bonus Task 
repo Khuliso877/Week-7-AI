@@ -1,0 +1,62 @@
+Policy Guideline for Ethical AI Use in Healthcare
+1. Purpose and Scope
+This guideline establishes the ethical, transparent, and responsible use of Artificial Intelligence (AI) systems within healthcare environments. It applies to all AI tools used for diagnosis, monitoring, decision support, patient communication, and operational management.
+
+2. Patient Consent Protocols
+To uphold autonomy and protect patient rights, all AI-assisted healthcare interactions must follow strict consent requirements:
+
+2.1 Informed Consent
+Patients must be clearly informed when AI tools are being used in their care.
+Information must include:
+The AI system’s purpose
+What data it uses
+Expected benefits and limitations
+Potential risks or uncertainties
+Consent must be written or digitally recorded before data collection or model use.
+
+2.2 Data Privacy & Protection
+Only data essential to the AI’s function may be collected (“data minimization”).
+Sensitive medical information must be anonymized or securely pseudonymized.
+Patients must be informed of their rights to withdraw consent at any time without affecting their access to care.
+
+2.3 Special Populations
+Additional safeguards apply when dealing with minors, elderly individuals, or cognitively impaired patients.
+Consent must be obtained from legal guardians or designated caregivers when necessary.
+
+3. Bias Mitigation Strategies
+AI systems must produce fair and equitable outcomes for all patients, regardless of demographic background.
+
+3.1 Dataset Quality
+Training data must be representative of the population served (age, race, gender, socioeconomic factors).
+Regular audits must be conducted to detect imbalances or missing demographic segments.
+
+3.2 Algorithmic Fairness
+Models must be tested for disparate impact and subgroup performance.
+Fairness-enhancing techniques (e.g., re-weighting, adversarial debiasing, equalized odds adjustments) should be employed where needed.
+
+3.3 Human Oversight
+Clinical professionals must remain final decision-makers.
+AI outputs should never be used as the sole basis for high-risk medical decisions.
+
+4. Transparency Requirements
+AI systems must be understandable, traceable, and accountable.
+
+4.1 Explainability
+Patients and clinicians must have access to clear explanations of how AI reached its recommendations.
+Visual explanation tools (e.g., feature importance, confidence scores) should be available.
+
+4.2 Documentation
+Developers and healthcare providers must maintain documentation including:
+Data sources and preprocessing steps
+Model architecture and training methodology
+Known limitations and error rates
+Intended use cases and prohibited uses
+
+4.3 Accountability
+Clear responsibility chains must be defined for data handling, model validation, deployment, and monitoring.
+Any adverse outcomes linked to AI use must be promptly reported and reviewed by an ethics board.
+
+5. Continuous Monitoring and Evaluation
+AI systems must undergo routine performance reviews, post-deployment audits, and re-certification.
+Drift detection mechanisms must identify changes in model behaviour over time.
+Updates or retraining must follow the same ethical standards as initial development.
