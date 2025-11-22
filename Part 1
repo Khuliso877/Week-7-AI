@@ -1,0 +1,28 @@
+Part 1:Theoretical Analysis
+1:Understanding Algorithmic Bias in Artificial
+Intelligence Systems
+Algorithmic bias is the unfair or discriminatory outcomes produced by AI when the
+data or model design favors certain groups.
+Examples:
+1. Facial recognition systems misidentify darker-skinned individuals more often.
+2. Hiring algorithms favor male candidates due to biased historical data.
+2: Transparency vs Explainability in AI:
+Understanding the Difference and Importance
+Transparency is openness about how an AI system is built, including data sources and
+model design.
+Explainability is the ability to understand why the AI made a specific decision.
+Importance: Both support trust, accountability, fairness, and regulatory compliance.
+3: The Impact of GDPR on AI Development in the
+EU
+GDPR impacts AI development in the EU by enforcing strict rules on how personal data is
+collected, processed, and used. AI developers must follow principles like data minimization,
+obtain clear user consent, and ensure transparency in data use. GDPR also restricts fully
+automated decision-making and gives individuals rights such as access, correction, and
+human review. Developers must conduct DPIAs, use privacy-by-design, and address risks
+like bias and discrimination. Overall, GDPR ensures that AI systems are accountable, fair,
+and protective of user privacy.
+2. Ethical Principles Matching
+● A) Justice → Fair distribution of AI benefits and risks.
+● B) Non-maleficence → Ensuring AI does not harm individuals or society.
+● C) Autonomy → Respecting users’ right to control their data and decisions.
+● D) Sustainability → Designing AI to be environmentally friendly
