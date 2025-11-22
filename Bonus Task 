@@ -1,62 +1,54 @@
-Policy Guideline for Ethical AI Use in Healthcare
-1. Purpose and Scope
-This guideline establishes the ethical, transparent, and responsible use of Artificial Intelligence (AI) systems within healthcare environments. It applies to all AI tools used for diagnosis, monitoring, decision support, patient communication, and operational management.
-
-2. Patient Consent Protocols
-To uphold autonomy and protect patient rights, all AI-assisted healthcare interactions must follow strict consent requirements:
-
-2.1 Informed Consent
-Patients must be clearly informed when AI tools are being used in their care.
-Information must include:
-The AI system’s purpose
-What data it uses
-Expected benefits and limitations
-Potential risks or uncertainties
-Consent must be written or digitally recorded before data collection or model use.
-
-2.2 Data Privacy & Protection
-Only data essential to the AI’s function may be collected (“data minimization”).
-Sensitive medical information must be anonymized or securely pseudonymized.
-Patients must be informed of their rights to withdraw consent at any time without affecting their access to care.
-
-2.3 Special Populations
-Additional safeguards apply when dealing with minors, elderly individuals, or cognitively impaired patients.
-Consent must be obtained from legal guardians or designated caregivers when necessary.
-
-3. Bias Mitigation Strategies
-AI systems must produce fair and equitable outcomes for all patients, regardless of demographic background.
-
-3.1 Dataset Quality
-Training data must be representative of the population served (age, race, gender, socioeconomic factors).
-Regular audits must be conducted to detect imbalances or missing demographic segments.
-
-3.2 Algorithmic Fairness
-Models must be tested for disparate impact and subgroup performance.
-Fairness-enhancing techniques (e.g., re-weighting, adversarial debiasing, equalized odds adjustments) should be employed where needed.
-
-3.3 Human Oversight
-Clinical professionals must remain final decision-makers.
-AI outputs should never be used as the sole basis for high-risk medical decisions.
-
-4. Transparency Requirements
-AI systems must be understandable, traceable, and accountable.
-
-4.1 Explainability
-Patients and clinicians must have access to clear explanations of how AI reached its recommendations.
-Visual explanation tools (e.g., feature importance, confidence scores) should be available.
-
-4.2 Documentation
-Developers and healthcare providers must maintain documentation including:
-Data sources and preprocessing steps
-Model architecture and training methodology
-Known limitations and error rates
-Intended use cases and prohibited uses
-
-4.3 Accountability
-Clear responsibility chains must be defined for data handling, model validation, deployment, and monitoring.
-Any adverse outcomes linked to AI use must be promptly reported and reviewed by an ethics board.
-
-5. Continuous Monitoring and Evaluation
-AI systems must undergo routine performance reviews, post-deployment audits, and re-certification.
-Drift detection mechanisms must identify changes in model behaviour over time.
-Updates or retraining must follow the same ethical standards as initial development.
+Policy Guideline: Ethical Deployment
+and Use of Artificial Intelligence (AI) in
+Healthcare
+Effective Date: January 1, 2026 Scope: All personnel, systems, and vendors involved in
+developing, deploying, or utilizing AI/ML models for clinical, operational, or administrative
+purposes.
+1. Purpose and Principles
+AI must uphold the core ethical principles of Beneficence, Non-Maleficence, Autonomy, and
+Justice, ensuring patient care, preserving trust, and promoting equity.
+2. Patient Consent Protocols and Autonomy
+AI utilization must always respect patient autonomy.
+2.1 Dynamic, Context-Specific Consent
+1. Informed Consent: Patients must be explicitly informed when AI is used for data
+analysis or to recommend treatment.
+2. Dynamic Consent: Consent must be specific to the AI application's context (e.g.,
+triage vs. optimization). Broad, one-time consent for all future AI uses is prohibited.
+3. Right to Withdraw/Opt-Out: Patients retain the right to withdraw their personal data
+from future AI model retraining at any time. Clinicians must always retain the
+authority to override AI recommendations ("human in the loop").
+3. Bias Mitigation and Health Equity
+AI systems must not perpetuate or amplify existing health disparities.
+3.1 Data Audit and Fair Representation
+1. Mandatory Bias Audits: Before deployment, conduct rigorous auditing to assess AI
+performance across diverse demographic subgroups (race, ethnicity, age, and
+socioeconomic status).
+2. Data Quality and Provenance: Documentation must verify that training data is
+representative of the target population and free from systematic biases leading to
+disparate clinical outcomes.
+3. Fairness Metrics: Development teams must define and track pre-specified fairness
+metrics (e.g., Equal Opportunity Difference) to ensure equitable model performance
+across high-risk patient groups.
+3.2 Post-Deployment Monitoring and Remediation
+1. Adverse Outcome Tracking: Implement systems for real-time monitoring of AI
+outputs to detect bias drift or emergent discriminatory results.
+2. Remediation: If unfair performance is detected, the AI system must be immediately
+flagged for re-calibration or temporary removal from clinical use until the issue is fully
+resolved.
+4. Transparency and Explainability
+All AI systems must be understandable to clinicians and, where possible, explainable to
+patients.
+4.1 Required Documentation
+1. Model Cards: Provide a publicly accessible "Model Card" for every deployed AI
+model. This must detail its intended use, dataset composition, key performance and
+fairness metrics, and known failure modes.
+2. Black Box Justification: Systems lacking inherent interpretability must provide an
+additional layer of local explanation (e.g., LIME or SHAP values) to justify specific
+clinical recommendations.
+4.2 Accountability and Audit
+1. Clear Ownership: A designated human clinical lead and a technical owner must be
+assigned to every deployed AI system, jointly responsible for compliance and
+addressing failures.
+2. Logging and Audit Trails: All AI recommendations, human override decisions, and
+associated patient data must be securely logged to maintain a complete, auditable
+trail for post-incident review and regulatory compliance
